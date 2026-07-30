@@ -1,4 +1,7 @@
 #!/bin/bash
+set -e
+
+mkdir -p AppIcon.iconset
 
 sips -z 16 16     logo.png --out AppIcon.iconset/icon_16x16.png
 sips -z 32 32     logo.png --out AppIcon.iconset/icon_16x16@2x.png
