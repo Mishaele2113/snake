@@ -180,7 +180,6 @@ final class Engine {
         timerTask = nil
     }
 
-    // Обработчик нажатий из SwiftUI
     func handleKeyPress(_ press: KeyPress) -> Bool {
         if isGameOver {
             resetGame()
@@ -188,17 +187,25 @@ final class Engine {
         }
 
         switch press.key {
-        case .leftArrow:
-            moveDir = .left
+        case .leftArrow, "a", "A":
+            if moveDirApplied != .right {
+                moveDir = .left
+            }
             return true
-        case .upArrow:
-            moveDir = .up
+        case .upArrow, "w", "W":
+            if moveDirApplied != .down {
+                moveDir = .up
+            }
             return true
-        case .rightArrow:
-            moveDir = .right
+        case .rightArrow, "d", "D":
+            if moveDirApplied != .left {
+                moveDir = .right
+            }
             return true
-        case .downArrow:
-            moveDir = .down
+        case .downArrow, "s", "S":
+            if moveDirApplied != .up {
+                moveDir = .down
+            }
             return true
         default:
             return false
@@ -233,17 +240,6 @@ final class Engine {
                     idx += 1
                 }
             }
-        }
-
-        moveDir = switch moveDir {
-            case .left:
-                moveDirApplied == .right ? moveDirApplied : .left
-            case .up:
-                moveDirApplied == .down ? moveDirApplied : .up
-            case .right:
-                moveDirApplied == .left ? moveDirApplied : .right
-            case .down:
-                moveDirApplied == .up ? moveDirApplied : .down
         }
 
         moveDirApplied = moveDir
