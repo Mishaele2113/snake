@@ -8,7 +8,7 @@ Simple program of snake game.
 
 ## Interaction
 
-Control snake direction with `W`, `A`, `S`, `D` and arrow keys.
+Control snake movement direction with `W`, `A`, `S`, `D` and arrow keys.
 
 <img src="demo.gif" width="300" alt="Demo" style="image-rendering: pixelated;">
 
