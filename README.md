@@ -4,6 +4,10 @@
 
 Simple program of snake game.
 
+<br><br>
+
+## Interaction
+
 Control snake direction with `W`, `A`, `S`, `D` and arrow keys.
 
 <img src="demo.gif" width="300" alt="Demo" style="image-rendering: pixelated;">
