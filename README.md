@@ -1,14 +1,12 @@
 # Snake
 
-<img src="res/logo.svg" width="128" height="128" alt="scrcpy" align="right" />
+<img src="res/logo.svg" width="128" alt="Logo" align="right">
 
 Simple program of snake game.
 
-## Interaction
-
 Control snake direction with `W`, `A`, `S`, `D` and arrow keys.
 
-<img src="demo.gif" width="300" style="image-rendering: pixelated;">
+<img src="demo.gif" width="300" alt="Demo" style="image-rendering: pixelated;">
 
 ## Build
 
@@ -31,7 +29,7 @@ Control snake direction with `W`, `A`, `S`, `D` and arrow keys.
 
 ### Run application
 
-Install created `Snake.dmg` or run program directly with
+Install created `Snake.dmg` or run program directly with:
 
 ```bash
 ./Snake.app/Contents/MacOS/snake
